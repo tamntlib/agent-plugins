@@ -1,0 +1,69 @@
+{
+  "upstream": {
+    "repo": "https://github.com/NousResearch/hermes-agent.git",
+    "branch": "main",
+    "licensePath": "LICENSE",
+    "commitSha": "46c4711228f4ac777f592c6cdeb84dcaabf68ad0"
+  },
+  "localSkills": [
+    "hermes-skill-portability"
+  ],
+  "skills": [
+    {
+      "name": "microsoft-office",
+      "source": "skills/productivity/microsoft-office"
+    },
+    {
+      "name": "pdf",
+      "source": "skills/productivity/pdf"
+    },
+    {
+      "name": "systematic-debugging",
+      "source": "skills/software-development/systematic-debugging"
+    },
+    {
+      "name": "test-driven-development",
+      "source": "skills/software-development/test-driven-development"
+    },
+    {
+      "name": "simplify-code",
+      "source": "skills/software-development/simplify-code"
+    },
+    {
+      "name": "architecture-diagram",
+      "source": "skills/creative/architecture-diagram"
+    },
+    {
+      "name": "claude-design",
+      "source": "skills/creative/claude-design"
+    },
+    {
+      "name": "popular-web-designs",
+      "source": "skills/creative/popular-web-designs"
+    },
+    {
+      "name": "humanizer",
+      "source": "skills/creative/humanizer"
+    },
+    {
+      "name": "spike",
+      "source": "skills/software-development/spike"
+    },
+    {
+      "name": "document-to-action-items",
+      "source": "skills/productivity/document-to-action-items"
+    },
+    {
+      "name": "meeting-action-items",
+      "source": "skills/productivity/meeting-action-items"
+    },
+    {
+      "name": "youtube-content",
+      "source": "skills/media/youtube-content"
+    },
+    {
+      "name": "dogfood",
+      "source": "skills/software-development/dogfood"
+    }
+  ]
+}

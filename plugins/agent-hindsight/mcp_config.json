@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "hindsight": {
+      "command": "node",
+      "args": [
+        "-e",
+        "import('node:path').then(p => import('node:url').then(u => import(u.pathToFileURL(p.resolve(process.env.PLUGIN_ROOT || '.', 'scripts', 'mcp.mjs')).href)))"
+      ]
+    }
+  }
+}

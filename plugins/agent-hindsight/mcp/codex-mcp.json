@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "hindsight": {
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/scripts/mcp.mjs"
+      ]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "name": "tamntlib-agent-plugins",
+  "owner": {
+    "name": "tamntlib"
+  },
+  "metadata": {
+    "description": "Cross-platform, independently installable plugins and skills for Antigravity, Claude Code, Codex, and Hermes."
+  },
+  "plugins": [
+    {
+      "name": "tamntlib-agent-profiles",
+      "source": "./plugins/agent-profiles",
+      "description": "Cross-platform, standalone profile resolution and session context plugin for Antigravity, Claude Code, and Codex.",
+      "version": "1.0.1",
+      "author": {
+        "name": "tamntlib"
+      },
+      "repository": "https://github.com/tamntlib/agent-plugins",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "tamntlib-agent-hindsight",
+      "source": "./plugins/agent-hindsight",
+      "description": "Cross-platform, zero-dependency Hindsight memory bridge (auto-recall, auto-retain, MCP proxy, CLI) for Antigravity, Claude Code, and Codex.",
+      "version": "1.2.0",
+      "author": {
+        "name": "tamntlib"
+      },
+      "repository": "https://github.com/tamntlib/agent-plugins",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "tamntlib-skills",
+      "source": "./plugins/skills",
+      "description": "Reusable cross-agent workflows and profile-isolated integration skills.",
+      "version": "1.2.0",
+      "author": {
+        "name": "tamntlib"
+      },
+      "repository": "https://github.com/tamntlib/agent-plugins",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "tamntlib-skills-hermes",
+      "source": "./plugins/skills-hermes",
+      "description": "Public Hermes-oriented portability and adaptation skills.",
+      "version": "1.1.0",
+      "author": {
+        "name": "tamntlib"
+      },
+      "repository": "https://github.com/tamntlib/agent-plugins",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "tamntlib-hermes-builtin-skills",
+      "source": "./plugins/hermes-builtin-skills",
+      "description": "Curated built-in skills synced from NousResearch/hermes-agent for non-Hermes agents (Antigravity, Claude Code, Codex).",
+      "version": "1.1.0",
+      "author": {
+        "name": "Nous Research (packaged by tamntlib)"
+      },
+      "repository": "https://github.com/tamntlib/agent-plugins",
+      "license": "MIT"
+    }
+  ]
+}

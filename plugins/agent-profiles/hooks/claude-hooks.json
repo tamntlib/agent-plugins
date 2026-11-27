@@ -1,0 +1,17 @@
+{
+  "description": "Resolve the active agent profile and inject profile context and environment variables at SessionStart.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/hook.mjs\" claude session-start",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

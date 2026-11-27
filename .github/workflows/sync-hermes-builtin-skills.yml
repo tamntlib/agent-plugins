@@ -1,0 +1,55 @@
+name: Sync Hermes Built-in Skills
+
+on:
+  schedule:
+    # Daily at 19:00 UTC (02:00 UTC+7)
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: sync-hermes-builtin-skills
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sync curated Hermes built-in skills
+        id: sync
+        run: node scripts/sync-hermes-builtin-skills.mjs
+
+      - name: Verify flat skill layout
+        if: steps.sync.outputs.changed == 'true'
+        run: test -z "$(find plugins -path '*/skills/*/*/*/SKILL.md')"
+
+      - name: Commit and push synced skills to main
+        if: steps.sync.outputs.changed == 'true'
+        env:
+          UPSTREAM_SHA: ${{ steps.sync.outputs.commit_sha }}
+        run: |
+          SHORT_SHA="${UPSTREAM_SHA:0:12}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add plugins/hermes-builtin-skills
+          if git diff --cached --quiet; then
+            echo "No staged changes after sync; skipping push."
+            exit 0
+          fi
+
+          git commit -m "chore(hermes-builtin-skills): sync upstream @ ${SHORT_SHA}"
+          git push origin HEAD:main

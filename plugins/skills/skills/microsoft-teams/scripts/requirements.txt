@@ -1,0 +1,3 @@
+# Install in a dedicated venv; ranges are compatibility bounds, not a lockfile.
+cryptography>=44.0.0,<49.0.0
+requests>=2.32.3,<3.0.0

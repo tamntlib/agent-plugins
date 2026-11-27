@@ -1,0 +1,13 @@
+{
+  "name": "tamntlib-agent-hindsight",
+  "version": "1.2.0",
+  "description": "Cross-platform, zero-dependency Hindsight memory bridge (auto-recall, auto-retain, MCP proxy, CLI) for Antigravity, Claude Code, and Codex.",
+  "author": {
+    "name": "tamntlib"
+  },
+  "repository": "https://github.com/tamntlib/agent-plugins",
+  "skills": "./skills/",
+  "hooks": "./hooks/claude-hooks.json",
+  "mcpServers": "./mcp/claude-mcp.json",
+  "license": "Apache-2.0"
+}

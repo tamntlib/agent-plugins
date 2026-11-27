@@ -1,0 +1,37 @@
+{
+  "name": "tamntlib-agent-profiles",
+  "version": "1.0.1",
+  "description": "Cross-platform, zero-dependency profile manager and lifecycle hook plugin for Antigravity, Claude Code, and Codex.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "tamntlib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tamntlib/agent-plugins",
+    "directory": "plugins/agent-profiles"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "agent-profiles": "./bin/agent-profiles.mjs"
+  },
+  "exports": {
+    ".": "./src/resolver.mjs",
+    "./config": "./src/config.mjs",
+    "./context": "./src/context.mjs",
+    "./hooks": "./src/hooks.mjs",
+    "./paths": "./src/paths.mjs"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "antigravity",
+    "claude-code",
+    "codex",
+    "agent-plugin",
+    "profiles",
+    "multi-profile"
+  ]
+}

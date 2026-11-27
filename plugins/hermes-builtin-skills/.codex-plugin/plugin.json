@@ -1,0 +1,20 @@
+{
+  "name": "tamntlib-hermes-builtin-skills",
+  "version": "1.1.0",
+  "description": "Curated built-in skills synced from NousResearch/hermes-agent for non-Hermes agents (Antigravity, Claude Code, Codex).",
+  "author": {
+    "name": "Nous Research (packaged by tamntlib)"
+  },
+  "repository": "https://github.com/tamntlib/agent-plugins",
+  "skills": "./skills/",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Hermes Built-in Skills",
+        "shortDescription": "Curated built-in skills synced from NousResearch/hermes-agent for non-Hermes agents",
+        "category": "Productivity"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tamntlib-agent-profiles",
+  "version": "1.0.1",
+  "description": "Cross-platform, standalone profile resolution and session context plugin for Antigravity, Claude Code, and Codex.",
+  "author": {
+    "name": "tamntlib"
+  },
+  "repository": "https://github.com/tamntlib/agent-plugins",
+  "license": "Apache-2.0"
+}

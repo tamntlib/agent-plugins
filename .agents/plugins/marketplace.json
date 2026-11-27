@@ -1,0 +1,68 @@
+{
+  "name": "tamntlib-agent-plugins",
+  "interface": {
+    "displayName": "tamntlib Agent Plugins"
+  },
+  "plugins": [
+    {
+      "name": "tamntlib-agent-profiles",
+      "source": {
+        "source": "local",
+        "path": "./plugins/agent-profiles"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "tamntlib-agent-hindsight",
+      "source": {
+        "source": "local",
+        "path": "./plugins/agent-hindsight"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "tamntlib-skills",
+      "source": {
+        "source": "local",
+        "path": "./plugins/skills"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "tamntlib-skills-hermes",
+      "source": {
+        "source": "local",
+        "path": "./plugins/skills-hermes"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "tamntlib-hermes-builtin-skills",
+      "source": {
+        "source": "local",
+        "path": "./plugins/hermes-builtin-skills"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "productivity"
+    }
+  ]
+}

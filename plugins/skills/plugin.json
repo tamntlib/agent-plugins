@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tamntlib-skills",
+  "version": "1.2.0",
+  "description": "Reusable cross-agent workflows and profile-isolated integration skills.",
+  "author": {
+    "name": "tamntlib"
+  },
+  "repository": "https://github.com/tamntlib/agent-plugins",
+  "license": "Apache-2.0"
+}

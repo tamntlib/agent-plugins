@@ -1,0 +1,11 @@
+{
+  "name": "tamntlib-skills-hermes",
+  "version": "1.1.0",
+  "description": "Public Hermes-oriented portability and adaptation skills.",
+  "author": {
+    "name": "tamntlib"
+  },
+  "repository": "https://github.com/tamntlib/agent-plugins",
+  "skills": "./skills/",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "tamntlib-agent-profiles",
+  "version": "1.0.1",
+  "description": "Cross-platform, standalone profile resolution and session context plugin for Antigravity, Claude Code, and Codex.",
+  "author": {
+    "name": "tamntlib"
+  },
+  "repository": "https://github.com/tamntlib/agent-plugins",
+  "license": "Apache-2.0",
+  "skills": "./skills/",
+  "hooks": "./hooks/codex-hooks.json",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Agent Profiles",
+        "shortDescription": "Deterministic multi-profile isolation for AI coding agents",
+        "category": "Productivity"
+      }
+    }
+  }
+}

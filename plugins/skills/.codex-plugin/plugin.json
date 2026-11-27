@@ -1,0 +1,20 @@
+{
+  "name": "tamntlib-skills",
+  "version": "1.2.0",
+  "description": "Reusable cross-agent workflows and profile-isolated integration skills.",
+  "author": {
+    "name": "tamntlib"
+  },
+  "repository": "https://github.com/tamntlib/agent-plugins",
+  "skills": "./skills/",
+  "license": "Apache-2.0",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "tamntlib Skills",
+        "shortDescription": "Reusable cross-agent engineering workflows and integration skills",
+        "category": "Productivity"
+      }
+    }
+  }
+}

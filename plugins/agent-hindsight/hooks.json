@@ -1,0 +1,25 @@
+{
+  "tamntlib-agent-hindsight": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "node scripts/hook.mjs agy session-start",
+        "timeout": 5
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "node scripts/hook.mjs agy pre-invocation",
+        "timeout": 10
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "node scripts/hook.mjs agy stop",
+        "timeout": 5
+      }
+    ]
+  }
+}
